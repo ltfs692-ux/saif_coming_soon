@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#760827">
+  <meta name="description" content="SAIF LLC-FZ — Our website is under development. Stay tuned.">
+  <title>SAIF LLC-FZ | Coming Soon</title>
+  <style>
+    :root { --burgundy:#760827; --text:#242124; --muted:#777078; --soft:#f8f1f3; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; min-height:100vh; padding:28px 18px; display:grid; place-items:center;
+      background:#fff; color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+    }
+    .page { width:min(100%,760px); text-align:center; padding:clamp(24px,5vw,54px); }
+    .logo { display:block; width:min(72%,330px); height:auto; margin:0 auto 24px; object-fit:contain; }
+    .eyebrow { color:var(--burgundy); font-size:12px; font-weight:700; letter-spacing:.22em; text-transform:uppercase; margin:0 0 14px; }
+    h1 { font-size:clamp(32px,6vw,54px); line-height:1.08; letter-spacing:-.04em; margin:0 auto 18px; max-width:650px; }
+    .message { color:var(--muted); font-size:clamp(16px,2.5vw,18px); line-height:1.75; max-width:550px; margin:0 auto; }
+    .rule { width:54px; height:3px; border:0; background:var(--burgundy); border-radius:10px; margin:30px auto; }
+    .contact { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin:0 auto; }
+    .contact a {
+      display:inline-flex; align-items:center; justify-content:center; gap:9px; min-height:48px;
+      padding:12px 17px; background:var(--soft); color:var(--burgundy); border:1px solid #efe1e6;
+      border-radius:10px; text-decoration:none; font-size:14px; overflow-wrap:anywhere;
+      transition:background .2s ease, transform .2s ease;
+    }
+    .contact a:hover { background:#f0e1e6; transform:translateY(-1px); }
+    .contact svg { width:18px; height:18px; flex:0 0 auto; }
+    footer { margin-top:44px; color:#9a9398; font-size:12px; letter-spacing:.02em; }
+    @media (max-width:480px) {
+      .page { padding:22px 8px; }
+      .logo { width:min(78%,280px); margin-bottom:28px; }
+      .contact { flex-direction:column; align-items:stretch; }
+      .contact a { width:100%; }
+      footer { margin-top:34px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <img class="logo" src="saif-logo.jpeg" alt="SAIF logo">
+    <p class="eyebrow">SAIF LLC-FZ</p>
+    <h1>We’re Working on Something Great.</h1>
+    <p class="message">
+      Our new website is currently under development. We’re working hard to bring
+      you a better experience. Thank you for your patience — stay tuned!
+    </p>
+    <hr class="rule">
+    <div class="contact" aria-label="Contact information">
+      <a href="mailto:info@saifeeuae.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m4 7 8 6 8-6"></path>
+        </svg>
+        info@saifeeuae.com
+      </a>
+      <a href="tel:+971558992301">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <path d="M7 3h3l2 5-2 1.5a15 15 0 0 0 4.5 4.5L16 12l5 2v3c0 1.1-.9 2-2 2C10.7 19 5 13.3 5 6c0-1.7.9-3 2-3Z"></path>
+        </svg>
+        +971 55 899 2301
+      </a>
+    </div>
+    <footer>© 2026 SAIF LLC-FZ. All rights reserved.</footer>
+  </main>
+</body>
+</html>
